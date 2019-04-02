@@ -1,0 +1,183 @@
+
+body {
+font-family: 'Heebo', sans-serif;
+}
+
+legend {
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+header {
+  text-align: center;
+  background: black;
+  color: white;
+  margin: -10px -10px;
+  font-size: 8pt;
+  padding: 15px 8px;
+}
+
+.sub {
+text-align: center;
+border-bottom: solid 5px black;
+}
+
+hr {
+border: solid .5px black;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+border: none;
+padding: 10px 0;
+}
+
+.contact-info label {
+  padding: 8px;
+}
+
+.contact-info input,
+select {
+  width: 100%;
+}
+
+input,
+select,
+textarea {
+background: lightgrey;
+border-radius: 3px;
+border: none;
+}
+
+input,
+select {
+  height: 40px;
+}
+
+.required::placeholder {
+text-align: right;
+padding-right: 20px;
+font-style:italic;
+}
+
+select:required:invalid {
+  color: grey;
+}
+option[value=""][disabled] {
+  display: none;
+}
+
+option {
+  color: grey;
+}
+
+.contact-info input:focus,
+select:focus,
+textarea[type="text"]:focus  {
+  border: solid 2px darkblue;
+}
+
+input[id="zipcode"] {
+  width: 40%;
+  height: 30px;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.news-format,
+.news-receive {
+  display: flex;
+  height: 40px;
+align-items: center;
+}
+
+.receive {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+.format {
+margin-top: 25px;
+margin-bottom: 10px;
+}
+
+label[for="others"] {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+margin-top: 20px;
+}
+
+.button {
+  background: turquoise;
+  font-size: 14pt;
+  color: white;
+  height: 50px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  font-size: 10pt;
+  font-style: italic;
+}
+
+
+
+
+@media (min-width:768px) {
+
+h2 {
+  margin-top: 30px;
+}
+
+.sub {
+  width: 70%;
+  margin: auto;
+  padding-top: 25px;
+}
+
+hr {
+width: 70%;
+}
+
+.contact-info {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
+.contact-info label,
+input {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.contact-info select {
+  width: 70%;
+}
+
+.contact-info label {
+width: 25%;
+
+}
+.contact-info input:not([id="zipcode"]) {
+width: 70%;
+}
+
+.newsletter {
+  width: 70%;
+  margin: auto;
+  padding-top: 25px;
+}
+
+}
